@@ -1,0 +1,67 @@
+C:\Users\Sergiu\Desktop\Info\FazanProiect\bin\Debug\FazanProiect.exe.config
+C:\Users\Sergiu\Desktop\Info\FazanProiect\bin\Debug\FazanProiect.exe
+C:\Users\Sergiu\Desktop\Info\FazanProiect\bin\Debug\FazanProiect.pdb
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.csproj.AssemblyReference.cache
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.Properties.Resources.resources
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.csproj.GenerateResource.cache
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.csproj.CoreCompileInputs.cache
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.exe
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.pdb
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.FormReguli.resources
+C:\Users\Sergiu\Desktop\Info\FazanProiect\bin\Debug\Database1.mdf
+C:\Users\Sergiu\Desktop\Info\FazanProiect\bin\Debug\Database1_log.ldf
+C:\Users\Sergiu\Desktop\Info\FazanProiect\bin\Debug\Interop.WMPLib.dll
+C:\Users\Sergiu\Desktop\Info\FazanProiect\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\Interop.WMPLib.dll
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.csproj.ResolveComReference.cache
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.Login.resources
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.Register.resources
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.MeniuPrincipal.resources
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.Joc.resources
+C:\Users\Sergiu\Desktop\Info\FazanProiect\obj\Debug\FazanProiect.LoginAccount.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\bin\Debug\Database1.mdf
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\bin\Debug\Database1_log.ldf
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\bin\Debug\FazanProiect.exe.config
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\bin\Debug\FazanProiect.exe
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\bin\Debug\FazanProiect.pdb
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\bin\Debug\Interop.WMPLib.dll
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.csproj.AssemblyReference.cache
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\Interop.WMPLib.dll
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.csproj.ResolveComReference.cache
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.MeniuPrincipal.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.Joc.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.LoginAccount.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.FormReguli.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.Login.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.Properties.Resources.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.Register.resources
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.csproj.GenerateResource.cache
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.exe
+C:\Users\Andrei\OneDrive\Desktop\FazanProiect\obj\Debug\FazanProiect.pdb
+D:\IT Projects\FazanProiect\bin\Debug\Database1.mdf
+D:\IT Projects\FazanProiect\bin\Debug\Database1_log.ldf
+D:\IT Projects\FazanProiect\bin\Debug\FazanProiect.exe.config
+D:\IT Projects\FazanProiect\bin\Debug\FazanProiect.exe
+D:\IT Projects\FazanProiect\bin\Debug\FazanProiect.pdb
+D:\IT Projects\FazanProiect\bin\Debug\Interop.WMPLib.dll
+D:\IT Projects\FazanProiect\bin\Debug\AxInterop.WMPLib.dll
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.csproj.AssemblyReference.cache
+D:\IT Projects\FazanProiect\obj\Debug\Interop.WMPLib.dll
+D:\IT Projects\FazanProiect\obj\Debug\AxInterop.WMPLib.dll
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.csproj.ResolveComReference.cache
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.MeniuPrincipal.resources
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.Joc.resources
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.LoginAccount.resources
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.FormReguli.resources
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.Login.resources
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.Properties.Resources.resources
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.Register.resources
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.csproj.GenerateResource.cache
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.csproj.CoreCompileInputs.cache
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.exe
+D:\IT Projects\FazanProiect\obj\Debug\FazanProiect.pdb
