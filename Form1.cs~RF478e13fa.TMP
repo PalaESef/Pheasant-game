@@ -1,0 +1,263 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace FazanProiect
+{
+    public partial class Form1 : Form
+    {
+        int n, limba=0;
+        /*
+        TextBox[] t;
+        Label[] l;
+        */
+        public Form1()
+        {
+            InitializeComponent();
+            Ascunde();
+        }
+
+        private void Engleza()
+        {
+            languageToolStripMenuItem.Text = "Language";
+            settingsToolStripMenuItem.Text = "Settings";
+            helpToolStripMenuItem.Text = "Help";
+            volumeToolStripMenuItem.Text = "Volume";
+            resetToolStripMenuItem.Text = "Reset";
+            buttonPlay.Text = "PLAY";
+            buttonExit.Text = "EXIT";
+            labelNr.Text = "Numbers of players :";
+            buttonPlayNr.Text = "PLAY";
+            exitToolStripMenuItem.Text = "Exit";
+            label1.Text = "Nickname :";
+            label2.Text = "Nickname :";
+            label3.Text = "Nickname :";
+            label4.Text = "Nickname :";
+            buttonPlay3.Text = "Play";
+            buttonPlayU.Text = "Play";
+        }
+
+        private void Romana()
+        {
+            languageToolStripMenuItem.Text = "Limba";
+            settingsToolStripMenuItem.Text = "Setari";
+            helpToolStripMenuItem.Text = "Ajutor";
+            volumeToolStripMenuItem.Text = "Volum";
+            resetToolStripMenuItem.Text = "Reseteaza";
+            buttonPlay.Text = "JOACA";
+            buttonExit.Text = "IESIRE";
+            labelNr.Text = "Numarul de jucatori : ";
+            buttonPlayNr.Text = "JOACA";
+            exitToolStripMenuItem.Text = "Iesire";
+            label1.Text = "Porecla :";
+            label2.Text = "Porecla :";
+            label3.Text = "Porecla :";
+            label4.Text = "Porecla :";
+            buttonPlay3.Text = "Joaca";
+            buttonPlayU.Text = "Joaca";
+        }
+
+        private void Ascunde()
+        {
+            labelNr.Visible = false;
+            textBoxNr.Visible = false;
+            buttonPlayNr.Visible = false;
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            buttonPlay3.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            labelText.Visible = false;
+            buttonPlayU.Visible = false;
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Engleza();
+            limba = 0;
+        }
+
+        private void romanaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Romana();
+            limba = 1;
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            Form2 F = new Form2();
+            this.Hide();
+            F.ShowDialog();
+            
+            /*
+            buttonPlay.Visible = false;
+            buttonExit.Visible = false; 
+            labelNr.Visible = true;
+            textBoxNr.Visible = true;
+            buttonPlayNr.Visible = true;
+            */
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonPlayNr_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                n = Convert.ToInt32(textBoxNr.Text);
+            }
+            catch
+            {
+                if(limba == 0)
+                    MessageBox.Show("Insert a number between 2-4");
+                else
+                    MessageBox.Show("Introdu un nr intre 2-4");
+                return;
+            }
+            if (n < 2 || n > 4)
+            {
+                if (limba == 0)
+                    MessageBox.Show("Insert a number between 2-4");
+                else
+                    MessageBox.Show("Introdu un nr intre 2-4");
+                textBoxNr.Text = "";
+                return;
+            }
+            labelFazan.Visible = false;
+            labelNr.Visible = false;
+            textBoxNr.Visible = false;
+            buttonPlayNr.Visible = false;
+            /*
+            t = new TextBox[n];
+            for (int i = 0; i < n; i++)
+            {
+                t[i] = new TextBox();
+                t[i].Multiline = true;
+                t[i].Name = "TextBox" + i.ToString();
+                t[i].Location = new Point((302 * i + 56), 207);
+                t[i].Size = new Size(195, 63);
+                this.Controls.Add(t[i]);
+            }
+            l = new Label[n];
+            for (int i = 0; i < n; i++)
+            {
+                l[i] = new Label();
+                l[i].Name = "label" + i.ToString();
+                l[i].Location = new Point((302 * i + 48), 139);
+                l[i].Size = new Size(195, 63);
+                l[i].Text = "Nickname : ";
+                l[i].Font = new Font("Snap ITC", 20, FontStyle.Bold);
+                l[i].BackColor = Color.White;
+                l[i].ForeColor = Color.Black;
+                this.Controls.Add(l[i]);
+            */
+            label1.Visible = true;
+            label2.Visible = true;
+            textBox1.Visible = true;
+            textBox2.Visible = true;
+            if (n == 3)
+            {
+                label3.Visible = true;
+                textBox3.Visible = true;
+            }
+            if (n == 4)
+            {
+                label3.Visible = true;
+                textBox3.Visible = true;
+                label4.Visible = true;
+                textBox4.Visible = true;
+            }
+            buttonPlay3.Visible = true;
+        }
+
+        private void buttonPlay3_Click(object sender, EventArgs e)
+        {
+            if (n == 2)
+            {
+                if (textBox1.Text == "" || textBox2.Text == "")
+                    MessageBox.Show("Introduceti o porecla!");
+                else
+                {
+                    label5.Text = textBox1.Text;
+                    label6.Text = textBox2.Text;
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    buttonPlay3.Visible = false;
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    label5.Visible = true;
+                    label6.Visible = true;
+                }
+            }
+            else if (n == 3)
+            { 
+                if(textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+                    MessageBox.Show("Introduceti o porecla!");
+                else
+                {
+                    label5.Text = textBox1.Text;
+                    label6.Text = textBox2.Text;
+                    label7.Text = textBox3.Text;
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    buttonPlay3.Visible = false;
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    label3.Visible = false;
+                    label5.Visible = true;
+                    label6.Visible = true;
+                    label7.Visible = true;
+                }
+            }
+            else if (n == 4)
+            {
+                if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
+                    MessageBox.Show("Introduceti o porecla!");
+                else
+                {
+                    label5.Text = textBox1.Text;
+                    label6.Text = textBox2.Text;
+                    label7.Text = textBox3.Text;
+                    label8.Text = textBox4.Text;
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    buttonPlay3.Visible = false;
+                    label1.Visible = false;
+                    label2.Visible = false;
+                    label3.Visible = false;
+                    label4.Visible = false;
+                    label5.Visible = true;
+                    label6.Visible = true;
+                    label7.Visible = true;
+                    label8.Visible = true;
+                }
+            }
+            
+        }
+    }
+}

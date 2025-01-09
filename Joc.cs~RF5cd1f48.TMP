@@ -1,0 +1,197 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WMPLib;
+
+namespace FazanProiect
+{
+    public partial class Joc : Form
+    {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
+        public static Joc Instance;
+        public Label lab1;
+
+        public Joc()
+        {
+            InitializeComponent();
+            player.URL = "Rainy Jazz - Music for Relax, Sleep _ Jazz History.mp3";
+            MeniuPrincipal.Variabile_globale.muzica = 0;
+            Ascunde();
+            if (MeniuPrincipal.Variabile_globale.NrJucatori == 3)
+            {
+                labelP3.Visible = true;
+                buttonP3.Visible = true;
+            }
+            if (MeniuPrincipal.Variabile_globale.NrJucatori == 4)
+            {
+                labelP3.Visible = true;
+                labelP4.Visible = true;
+                buttonP3.Visible = true;
+                buttonP4.Visible = true;
+            }
+            if (MeniuPrincipal.Variabile_globale.limbaGlobala == 0)
+                Engleza();
+            else
+                Romana();
+            Instance = this;
+            lab1 = labelP1;
+            /*
+            if (MeniuPrincipal.Variabile_globale.Numar == 1)
+                lab1 = labelP1;
+            else if (MeniuPrincipal.Variabile_globale.Numar == 2)
+                lab1 = labelP2;
+            else if (MeniuPrincipal.Variabile_globale.Numar == 3)
+                lab1 = labelP3;
+            else if (MeniuPrincipal.Variabile_globale.Numar == 4)
+                lab1 = labelP4;
+            */
+        }
+
+        private void Ascunde()
+        {
+            labelP3.Visible = false;
+            labelP4.Visible = false;
+            buttonP3.Visible = false;
+            buttonP4.Visible = false;
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Engleza();
+            MeniuPrincipal.Variabile_globale.limbaGlobala = 0;
+        }
+
+        private void romanaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Romana();
+            MeniuPrincipal.Variabile_globale.limbaGlobala = 1;
+        }
+
+        private void Engleza()
+        {
+            languageToolStripMenuItem.Text = "Language";
+            musicToolStripMenuItem.Text = "Music";
+            rulesToolStripMenuItem.Text = "Rules";
+            exitToolStripMenuItem.Text = "Exit"; 
+            if (MeniuPrincipal.Variabile_globale.muzica2 == 0)
+                pauseToolStripMenuItem.Text = "Pause";
+            else
+                pauseToolStripMenuItem.Text = "Unpause";
+            labelP1.Text = "Player 1";
+            labelP2.Text = "Player 2";
+            labelP3.Text = "Player 3";
+            labelP4.Text = "Player 4";
+            buttonP1.Text = "Login";
+            buttonP2.Text = "Login";
+            buttonP3.Text = "Login";
+            buttonP4.Text = "Login";
+        }
+
+        private void Romana()
+        {
+            languageToolStripMenuItem.Text = "Limba";
+            musicToolStripMenuItem.Text = "Muzica";
+            rulesToolStripMenuItem.Text = "Reguli";
+            exitToolStripMenuItem.Text = "Iesire";
+            labelP1.Text = "Jucator 1";
+            labelP2.Text = "Jucator 2";
+            labelP3.Text = "Jucator 3";
+            labelP4.Text = "Jucator 4";
+            buttonP1.Text = "Autentificare";
+            buttonP2.Text = "Autentificare";
+            buttonP3.Text = "Autentificare";
+            buttonP4.Text = "Autentificare";
+            if (MeniuPrincipal.Variabile_globale.muzica2 == 0)
+                pauseToolStripMenuItem.Text = "Pauza";
+            else
+                pauseToolStripMenuItem.Text = "Reia";
+        }
+
+        private void stopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MeniuPrincipal.Variabile_globale.muzica == 0)
+            {
+                player.controls.stop();
+                MeniuPrincipal.Variabile_globale.muzica = 1;
+                stopToolStripMenuItem.Text = "Start";
+                pauseToolStripMenuItem.Enabled = false;
+            }
+            else
+            {
+                player.controls.play();
+                MeniuPrincipal.Variabile_globale.muzica = 0;
+                stopToolStripMenuItem.Text = "Stop";
+                pauseToolStripMenuItem.Enabled = true;
+            }
+        }
+
+        private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MeniuPrincipal.Variabile_globale.muzica2 == 0)
+            {
+                player.controls.pause();
+                MeniuPrincipal.Variabile_globale.muzica2 = 1;
+                if (MeniuPrincipal.Variabile_globale.limbaGlobala == 0)
+                    pauseToolStripMenuItem.Text = "Unpause";
+                else
+                    pauseToolStripMenuItem.Text = "Reia";
+                stopToolStripMenuItem.Enabled = false;
+            }
+            else
+            {
+                player.controls.play();
+                MeniuPrincipal.Variabile_globale.muzica2 = 0;
+                if (MeniuPrincipal.Variabile_globale.limbaGlobala == 0)
+                    pauseToolStripMenuItem.Text = "Pause";
+                else
+                    pauseToolStripMenuItem.Text = "Pauza";
+                stopToolStripMenuItem.Enabled = true;
+            }
+        }
+
+        private void rulesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormReguli F = new FormReguli();
+            F.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonP1_Click(object sender, EventArgs e)
+        {
+            MeniuPrincipal.Variabile_globale.Numar = 1;
+            Login F = new Login();
+            F.ShowDialog();
+        }
+
+        private void buttonP2_Click(object sender, EventArgs e)
+        {
+            MeniuPrincipal.Variabile_globale.Numar = 2;
+            Login F = new Login();
+            F.ShowDialog();
+        }
+
+        private void buttonP3_Click(object sender, EventArgs e)
+        {
+            MeniuPrincipal.Variabile_globale.Numar = 3;
+            Login F = new Login();
+            F.ShowDialog();
+        }
+
+        private void buttonP4_Click(object sender, EventArgs e)
+        {
+            MeniuPrincipal.Variabile_globale.Numar = 4;
+            Login F = new Login();
+            F.ShowDialog();
+        }
+    }
+}
